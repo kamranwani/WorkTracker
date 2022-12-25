@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Time Tracker</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/fontawesome.min.css"
+      integrity="sha384-QYIZto+st3yW+o8+5OHfT6S482Zsvz2WfOzpFSXMF9zqeLcFV0/wlZpMtyFcZALm"
+      crossorigin="anonymous"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=Roboto:wght@100;400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <p class="date"></p>
+      <div class="top">
+        <div class="content">
+          <form action="#">
+            <div class="int-time">
+              <h4>Start Time</h4>
+              <div class="hour">
+                <label>Hour:</label>
+                <input
+                  type="text"
+                  pattern="\d*"
+                  maxlength="2"
+                  placeholder="HR"
+                  required
+                  id="intHour1"
+                />
+              </div>
+              <div class="min">
+                <label>Min:</label>
+                <input
+                  type="text"
+                  pattern="\d*"
+                  maxlength="2"
+                  placeholder="MIN"
+                  required
+                  id="intMin1"
+                />
+              </div>
+            </div>
+            <div class="final-time">
+              <h4>Final Time</h4>
+              <div class="hour">
+                <label>Hour:</label>
+                <input
+                  type="text"
+                  pattern="\d*"
+                  maxlength="2"
+                  placeholder="HR"
+                  required
+                  id="finalHour1"
+                />
+              </div>
+              <div class="min">
+                <label>Min:</label>
+                <input
+                  type="text"
+                  pattern="\d*"
+                  maxlength="2"
+                  placeholder="MIN"
+                  required
+                  id="finalMin1"
+                />
+              </div>
+            </div>
+            <div class="task-details">
+              <label class="cus-label">Task Details</label>
+              <textarea id="textArea1" maxlength="100"></textarea>
+            </div>
+          </form>
+          <button class="addBtn0" onclick="handleClick()">Add Task 1</button>
+        </div>
+      </div>
+      <div class="bottom">
+        <p class="dsp-totalmins"></p>
+      </div>
+    </div>
+    <script src="./app.js"></script>
+  </body>
+</html>

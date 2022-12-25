@@ -1,0 +1,121 @@
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=Roboto:wght@100;400;500&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Playfair Display", serif;
+  font-family: "Roboto", sans-serif;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  background: rgb(7, 0, 36);
+  background: linear-gradient(
+    40deg,
+    rgb(255, 255, 255) 20%,
+    rgba(35, 22, 180, 0.85) 35%
+  );
+  padding: 30px;
+  border-radius: 3px;
+  width: 70%;
+  margin: 2px auto;
+  box-shadow: 0px 0px 0px 1px rgba(0, 0, 0, 0.507);
+  /* border: 1px solid black; */
+}
+.top {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.507);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 5px 10px;
+}
+.top h2 {
+  text-align: center;
+  color: white;
+  padding: 3px 6px;
+  border-radius: 2px;
+}
+.content form {
+  display: flex;
+  /* border: 1px solid black; */
+  width: 100%;
+  margin: 5px auto;
+  padding: 5px 10px;
+  box-shadow: 0.5px 0.5px 0.8px 1px rgba(0, 0, 0, 0.507);
+  border-radius: 5px;
+  justify-content: space-evenly;
+}
+.int-time,
+.final-time {
+  /* border: 1px solid yellow;   */
+  display: flex;
+  padding: 3px;
+  width: 30%;
+}
+.task-details {
+  /* border: 1px solid yellow;   */
+  display: flex;
+  padding: 3px;
+  width: 40%;
+}
+
+form h4 {
+  color: white;
+  text-align: center;
+  width: 50%;
+  margin-top: 7px;
+}
+.hour,
+.min {
+  /* border: 1px solid red; */
+  display: flex;
+  width: 50%;
+}
+.content form label {
+  display: block;
+  margin: 11px 3px 10px 3px;
+  font-size: 11px;
+  font-weight: 500;
+  /* text-align: center; */
+  color: white;
+}
+.content form :where(input, textarea) {
+  width: 30%;
+  padding: 1px 0px 1px 3px;
+  height: 30px;
+  outline: none;
+  font-size: 10px;
+  border: 1px solid #999;
+  border-radius: 5px;
+}
+.content form textarea {
+  resize: none;
+  height: 70px;
+  padding: 10px;
+  width: 100%;
+}
+.content button {
+  width: 20%;
+  outline: none;
+  color: #fff;
+  background-color: rgba(35, 22, 180, 0.85);
+  font-size: 16px;
+  padding: 10px;
+  border-radius: 4px;
+  border: none;
+  cursor: pointer;
+  display: block;
+  margin: 0 auto;
+}
+
+.dsp-totalmins,
+.date {
+  color: white;
+  /* border: 1px solid black; */
+  width: 30%;
+  margin: 2px auto;
+  padding: 5px 2px;
+  font-size: 18px;
+  text-align: center;
+}
